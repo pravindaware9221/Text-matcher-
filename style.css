@@ -1,0 +1,34 @@
+.body{
+    margin: 50px 100px 50px 100px ;
+
+
+}
+.text-head{
+    display: flex ;
+    justify-content: center;
+}
+.box{
+    border: solid 6px blueviolet;
+    margin: 30px;
+    padding: 50px;
+    border-radius: 5px;
+}
+.input-box{
+    display: flex ;
+    justify-content: center;
+    position: relative;
+    box-sizing: content-box;
+    
+}
+.buttn{
+    display: flex ;
+    justify-content: center;
+    background-color: blueviolet;
+    padding: 20px;
+    color: azure;
+    border-radius: 20px;
+}
+.center{
+    display: flex ;
+    justify-content: center;
+}

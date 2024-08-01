@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Matcher Tool</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="body">
+    <div class="box">
+        <h1 class="text-head">Text Matcher Tool</h1>
+        <label for="main-text" class="center">Main Text:</label>
+        <div class="input-box"> <input type="text" id="main-text"></div>
+
+        <br>
+        <label for="search-text" class="center" name="" value="">Text to Search:</label>
+        <div class="input-box"><input type="text" ></label>></for=> id="search-text"></div>
+
+        <br>
+        <div class="center">
+            <button onclick="matchText()" class="buttn">Match Text</button>
+
+
+        </div>
+        <h1 id="result" class="center"></h1>
+    </div>
+
+    <script>
+        function matchText() {
+            const mainText = document.getElementById('main-text').value;
+            const searchText = document.getElementById('search-text').value;
+            const result = document.getElementById('result');
+
+            const a = mainText;
+            const b = searchText;
+            const i =[0];
+
+            if (a == i || b == i) {
+                result.textContent = 'Enter Text !';
+                result.style.color = 'black';
+            }
+            else if (a == b) {
+                result.textContent = 'Text found!';
+                result.style.color = 'green';
+            }
+
+            else {
+                result.textContent = 'Text not found.';
+                result.style.color = 'red';
+            }
+        }
+    </script>
+</body>
+
+</html>
